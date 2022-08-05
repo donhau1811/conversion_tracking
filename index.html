@@ -21,7 +21,9 @@
     ></script>
     <script>
       async function getData() {
-        const response = await fetch("http://localhost:8000/data");
+        const response = await fetch(
+          "https://fake-db-conversion-app.herokuapp.com/data"
+        );
         const dataSet = await response.json();
         return dataSet;
       }
