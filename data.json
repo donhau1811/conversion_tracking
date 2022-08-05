@@ -1,0 +1,81 @@
+{
+  "data": [
+    {
+      "day": "04/08/2022",
+      "reach": 100,
+      "click": 20,
+      "scan": 30,
+      "iOS": 20,
+      "Android": 5,
+      "Total": 25,
+      "Membership": 10,
+      "Customer": 20
+    },
+    {
+      "day": "05/08/2022",
+      "reach": 100,
+      "click": 20,
+      "scan": 30,
+      "iOS": 20,
+      "Android": 5,
+      "Total": 25,
+      "Membership": 10,
+      "Customer": 20
+    },
+    {
+      "day": "06/08/2022",
+      "reach": 100,
+      "click": 20,
+      "scan": 30,
+      "iOS": 20,
+      "Android": 5,
+      "Total": 25,
+      "Membership": 10,
+      "Customer": 20
+    },
+    {
+      "day": "07/08/2022",
+      "reach": 100,
+      "click": 20,
+      "scan": 30,
+      "iOS": 20,
+      "Android": 5,
+      "Total": 25,
+      "Membership": 10,
+      "Customer": 20
+    },
+    {
+      "day": "08/08/2022",
+      "reach": 100,
+      "click": 20,
+      "scan": 30,
+      "iOS": 20,
+      "Android": 5,
+      "Total": 25,
+      "Membership": 10,
+      "Customer": 20
+    },
+    {
+      "day": "09/08/2022",
+      "reach": 100,
+      "click": 20,
+      "scan": 30,
+      "iOS": 20,
+      "Android": 5,
+      "Total": 25,
+      "Membership": 10,
+      "Customer": 20
+    },
+    {
+      "day": "10/08/2022",
+      "reach": 100,
+      "click": 20,
+      "scan": 30,
+      "iOS": 20,
+      "Android": 5,
+      "Total": 25,
+      "Membership": 10,
+      "Customer": 20
+    }
+  ]
+}

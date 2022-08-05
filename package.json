@@ -1,0 +1,23 @@
+{
+  "name": "fake-server",
+  "version": "1.0.0",
+  "description": "fake server with mock database",
+  "main": "server.js",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donhau1811/conversion_tracking.git"
+  },
+  "author": "Hau Tran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/donhau1811/conversion_tracking/issues"
+  },
+  "homepage": "https://github.com/donhau1811/conversion_tracking#readme"
+}
