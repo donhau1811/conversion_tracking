@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Multi Bar Chart</title>
+    <title>Data tracking system</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -19,6 +19,7 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/chart.js"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
     <script>
       async function getData() {
         const response = await fetch(
@@ -97,7 +98,14 @@
         const config = {
           type: "bar",
           data,
+          plugins: [ChartDataLabels],
           options: {
+            plugins: {
+              datalabels: {
+                anchor: "end",
+                align: "top",
+              },
+            },
             scales: {
               y: {
                 beginAtZero: true,
