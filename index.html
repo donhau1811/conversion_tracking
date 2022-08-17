@@ -98,8 +98,8 @@
             {
               label: "Total Customers",
               data: customerValues,
-              backgroundColor: ["rgba(38, 31, 35, 0.2)"],
-              borderColor: ["rgba(38, 31, 35, 1)"],
+              backgroundColor: ["rgba(163, 180, 170, 0.8)"],
+              borderColor: ["rgba(163, 180, 170, 1)"],
               borderWidth: 1,
             },
           ],
@@ -116,13 +116,49 @@
               },
             },
             scales: {
+              x: {
+                min: 0,
+                max: 6,
+              },
               y: {
                 beginAtZero: true,
               },
             },
+            responsive: true,
           },
         };
         const myChart = new Chart(document.getElementById("myChart"), config);
+
+        function scroller(scroll, chart) {
+          console.log(scroll);
+
+          const dataLength = myChart.data.labels.length;
+
+          if (scroll.deltaY > 0) {
+            if (myChart.config.options.scales.x.max >= dataLength) {
+              myChart.config.options.scales.x.min = dataLength - 6;
+              myChart.config.options.scales.x.max = dataLength;
+            } else {
+              myChart.config.options.scales.x.min += 1;
+              myChart.config.options.scales.x.max += 1;
+            }
+          } else if (scroll.deltaY < 0) {
+            if (myChart.config.options.scales.x.min <= 0) {
+              myChart.config.options.scales.x.min = 0;
+              myChart.config.options.scales.x.max = 6;
+            } else {
+              myChart.config.options.scales.x.min -= 1;
+              myChart.config.options.scales.x.max -= 1;
+            }
+          } else {
+            //do nothing
+          }
+          myChart.update();
+        }
+
+        myChart.canvas.addEventListener("wheel", (e) => {
+          scroller(e, myChart);
+        });
       });
     </script>
   </body>
